@@ -1,0 +1,22 @@
+# Navigate to the root directory of your repository
+cd /path/to/your/repository
+
+# Create or open the .gitignore file
+# If you don't have one, create it
+# If you already have one, open it in a text editor
+# For example, using nano:
+nano .gitignore
+
+# Add the following line to ignore .env files
+.env
+
+# Save and close the file (in nano, you'd press Ctrl + X, then Y, then Enter)
+
+# Stage the .gitignore file for commit
+git add .gitignore
+
+# Commit the changes
+git commit -m "Add .env to .gitignore"
+
+# Push the changes to your remote repository
+git push origin main

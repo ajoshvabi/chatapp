@@ -1,0 +1,400 @@
+.darkTheme{
+  --some-bg:#202C33;
+  --dark-bg:#111B21;
+  --contact-name:#D1D7D0;
+  --inputbox-bg:#2A3942;
+  --sendmsg-bg:#005C4B;
+  --msg-color:#E9EDEF;
+  --chat-msg-bg:#0B141A;
+  --scroll-color:#374045;
+  --message-bg:#0B141A;
+  --navicon-color:#AEBAC1;
+  --count-bg:#00A884;
+  --count-text:#202C33;
+  --border-clo:#2f2f2f60;
+  --bg-img:soft-light;
+}
+.lightTheme{
+  --some-bg:#F0F2F5;
+  --dark-bg:#F5F6F6;
+  --contact-name:#111B21;
+  --inputbox-bg:#FFFFFF;
+  --sendmsg-bg:#D9FDD3;
+  --msg-color:#111B21;
+  --chat-msg-bg:#EFEAE2;
+  --scroll-color:#CED0D1;
+  --message-bg:#EFEAE2;
+  --navicon-color:#54656F;
+  --count-bg:#25D366;
+  --count-text:#ffffff;
+  --border-clo:rgba(195, 195, 195, 0.365);
+
+
+
+}
+
+
+input:focus
+{
+    /* border: 1px solid #1670BE; */
+    /* box-shadow: 0 0 3px #1670BE; */
+    outline-offset: 0px;
+    outline: none;
+    color:var(--contact-name);
+    background-color: var(--inputbox-bg);
+
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:var(--scroll-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+.msgtextcolor{
+color: var(--msg-color);
+/* color: rgb(124, 128, 0); */
+}
+
+
+
+
+
+.homecontainer {
+  height: 100vh;
+}
+
+.homecontact {
+  height: 100vh;
+  background-color: var(--dark-bg);
+
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.no-select {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.linknon{
+  text-decoration: none;
+  /* color: transparent; */
+}
+
+/*--------------- contact------------------ */
+.navnav {
+  background-color: var(--some-bg);
+  height: 60px;
+}
+.firstnav {
+  background-color: var(--some-bg);
+  height: 7rem;
+}
+
+.navprofile {
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+  cursor: pointer;
+}
+
+.naviconcolor {
+  color: var(--navicon-color);
+}
+
+.navsearch {
+  background-color: var(--some-bg);
+  border: 0;
+  border-radius: 10px;
+  height: 30px;
+  padding: 18px;
+
+}
+
+.searchstyle {
+  height: 49px;
+  background-color:  var(--dark-bg);
+}
+
+
+.chatsection {
+  height: 75px;
+  border: 10px;
+  border: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-width: 1px;
+  border-color: var(--border-clo);
+  margin: 0;
+  padding: 0;
+
+}
+
+.chatsection :hover {
+  background-color: var(--some-bg);
+  cursor: pointer;
+}
+
+.contactprofile {
+  width: 49px;
+  height: 49px;
+  max-height: 49px;
+  
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.contactusername {
+  margin: 0;
+  margin-top: 3px;
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  color: var(--contact-name);
+  overflow-wrap: break-word;
+}
+
+.contacttime {
+  font-size: 13px;
+  color: #00A884;
+  font-weight: 500;
+}
+
+.contacttimediable {
+  font-size: 13px;
+  color: #8696A0;
+  font-weight: 500;
+}
+
+.contactcountbg {
+  background-color: var(--count-bg);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.contactmsgcount {
+  font-size: 12px;
+  color: #11283E;
+  margin-top: 1.3px;
+  font-weight: 600;
+  color:var(--count-text) ;
+}
+
+.contactmsg {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--contact-name);
+}
+
+.contactmgnoactive {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6F7F88;
+}
+/* chat */
+.chatnav {
+  background-color: var(--some-bg);
+  height: 60px;
+  border: solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  border-width: 1px;
+  border-color: #47474798;
+  /* position:static; */
+}
+.messagebg{  
+  background-color: #0B141A;
+  /* background-color: var(--message-bg); */
+  
+}
+.messagebg1{
+  background-image: url('../../public/images/bg.png');
+  background-blend-mode:var(--bg-img);
+  /* background-image: url('../../public/images/whatsapp.jpg'); */
+  /* mix-blend-mode: darken; */
+  background-color: var(--message-bg);
+  /* color: #00A884; */
+/* opacity: 0.08; */
+/* height: 100vh; */
+background-size: contain;
+background-position: center
+}
+.chatbgscroll {
+  height: 100vh;
+  /* background-color:  var(--dark-bg); */
+
+}
+
+
+.sendmsg{
+  background-color: var(--sendmsg-bg);
+  min-height: 32px;
+  border-radius: 8px;
+  max-width: 530px;
+}
+.receivemsg{
+  background-color: var(--some-bg);
+  min-height: 32px;
+  border-radius: 8px;
+  max-width: 530px;
+}
+
+/* .msginput {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  z-index: 999;
+} */
+/* .inpubox{
+  margin-right: 10px;
+} */
+
+.msginput {
+  position: fixed;
+  margin-bottom:-10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px; 
+}
+.chatprofilefixed {
+  position: fixed;
+  margin-top:-10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px; 
+}
+.msgbgcolor{
+  height: 55px;
+  background-color: var(--some-bg);
+}
+
+.inputboxmessage{
+background-color: var(--inputbox-bg);
+border: 0;
+border-radius: 8px;
+width: 100%;
+height: 30px;
+padding-left: 1rem;
+
+color: var(--contact-name);
+}
+
+.profileimg {
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
+}
+.pointer{
+  cursor: pointer;
+}
+.offcanvasbg{
+  background-color:  var(--dark-bg);
+  color: var(--contact-name);
+}
+.offcanvashead{
+  background-color: var(--some-bg);
+  color: var(--contact-name);
+}
+.offcanvasred{
+  color: #F15C6D;
+}
+.offcanvasred :hover{
+background-color:var(--some-bg) ;
+}
+.offcanvasred h5{
+  font-size: 18px;
+  font-weight: 400;
+}
+.activelogin{
+  background-color: var(--some-bg);
+}
+.nonactivelogin{
+  background-color: var(--some-bg);
+}
+
+.logininput{
+  background-color: var(--inputbox-bg);
+border: 0;
+padding-left: 15px;
+color: white;
+}
+.frightcontent{
+  /* height: 100vh; */
+  position: fixed;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+}
+.invisiblechat{
+  z-index: -1;
+}
+.navindex{
+  z-index: 999;
+}
+.profileeditinput{
+  background-color: transparent;
+  color: var(--contact-name);
+  border: 0 solid #00A884;
+  border-width: 0 0 1px 0;
+  
+}
+.editbtn{
+  background-color: var(--count-bg);
+  color: white;
+}
+.profileicon{
+  color: var(--navicon-color);
+}
+/* .showsmal{
+  z-index: 99;
+} */
+
+.responsivenav{
+  margin-left: -10px;
+}
+.newabt{
+  text-overflow: ellipsis;
+}
+.overflowbt {
+  width: 18em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scrollchat{
+  /* z-index: 1; */
+  height: 100vh;
+}
+
+
